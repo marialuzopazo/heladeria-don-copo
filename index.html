@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Don Copo, heladeria" />
+    <title>Heladería Don Copo</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="header__logo">
+        <img src="img/logo/don-copo-logo.webp" alt="logo de don copo heladería" width="480" height="232" />
+      </a>
+      <nav class="nav" aria-label="Navegación">
+        <ul class="nav__lista">
+          <li><a href="index.html" class="nav__enlace" aria-current="page">inicio</a></li>
+          <li><a href="productos.html" class="nav__enlace">nuestros productos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-titulo">
+        <div class="hero__texto">
+          <h1 id="hero-titulo" class="hero__titulo">bienvenidos</h1>
+        </div>
+        <img class="hero__imagen" src="img/banner/hero.svg" alt="nena pensando en que cual elegir" width="1240" height="1270" />
+        <ul class="hero__bochas" aria-hidden="true">
+          <li><img class="bocha bocha--1" src="img/productos/fruti.svg" alt="" width="640" height="640" /></li>
+          <li><img class="bocha bocha--2" src="img/productos/grani.svg" alt="" width="640" height="640" /></li>
+          <li><img class="bocha bocha--3" src="img/productos/menta.svg" alt="" width="640" height="640" /></li>
+        </ul>
+      </section>
+
+      <section class="nosotros" aria-labelledby="nosotros-titulo">
+        <h2 id="nosotros-titulo" class="nosotros__titulo">sobre nosotros:</h2>
+        <article class="nosotros__contenido">
+          <h3>10 años acompañándote</h3>
+          <p>
+            <em>hace 10 años que nos une la pasión por disfrutar de sabores únicos que nos acompañen a compartir momentos con quien más queremos.</em>
+          </p>
+        </article>
+      </section>
+
+      <section class="contacto" id="contacto" aria-labelledby="contacto-titulo">
+        <blockquote class="contacto__frase">
+          <p>“Queremos seguir creciendo junto a vos, formá parte de esta hermosa experiencia en tu localidad”</p>
+        </blockquote>
+
+        <h2 id="contacto-titulo" class="contacto__titulo">contactanos</h2>
+
+        <form class="formulario" action="#">
+          <p class="formulario__campo">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="given-name" required />
+          </p>
+          <p class="formulario__campo">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" autocomplete="family-name" required />
+          </p>
+          <p class="formulario__campo">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required />
+          </p>
+          <p class="formulario__campo">
+            <label for="celular">Celular</label>
+            <input type="tel" id="celular" name="celular" autocomplete="tel" required />
+          </p>
+          <p class="formulario__campo formulario__campo--ancho">
+            <label for="localidad">Localidad</label>
+            <input type="text" id="localidad" name="localidad" required />
+          </p>
+          <p class="formulario__campo formulario__campo--ancho">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="6" minlength="10" required></textarea>
+          </p>
+          <button type="submit" class="boton">enviar información</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <address class="footer__direccion">
+        Dirección:<br />
+        Colón 332<br />
+        San Nicolás de los Arroyos - Bs. As. Arg.
+      </address>
+
+      <p class="footer__creditos">
+        <a href="https://github.com/marialuzopazo/heladeria-don-copo">link al repositorio </a> -
+        <a href="https://www.behance.net/gallery/256509383/diseno-web-heladeria">link: como se hizo esta web </a><br />
+        programación 3 UTN - FRSN &copy; 2026
+      </p>
+
+      <section class="footer__redes" aria-labelledby="redes-titulo">
+        <h2 id="redes-titulo" class="footer__titulo">seguinos en redes</h2>
+        <ul class="redes">
+          <li><a href="https://www.facebook.com/people/Don-Copo-Helader%C3%ADa/61594637805260/" target="_blank" rel="noopener"><img src="img/iconos/facebook.svg" alt="Facebook de Don Copo" width="32" height="32" /></a></li>
+          <li><a href="https://whatsapp.com/channel/0029VbDUexlBPzjQ5iqe5i1V" target="_blank" rel="noopener"><img src="img/iconos/whatsapp.svg" alt="canal de whatsapp" width="32" height="32" /></a></li>
+        </ul>
+      </section>
+
+      <a href="index.html" class="footer__logo">
+        <img src="img/logo/don-copo-logo.webp" alt="Don Copo" width="480" height="232" />
+      </a>
+    </footer>
+  </body>
+</html>
